@@ -1,15 +1,12 @@
 const fs = require('fs');
 const csv = require('csv-parser');
 
-// Input and output file paths
 const inputFile = 'input_countries.csv';
 const canadaFile = 'canada.txt';
 
-// Create writable stream for Canada
 const canadaStream = fs.createWriteStream(canadaFile);
 canadaStream.write('country,year,population\n'); // Write header
 
-// Read and filter data for Canada
 fs.createReadStream(inputFile)
   .pipe(csv())
   .on('data', (row) => {
