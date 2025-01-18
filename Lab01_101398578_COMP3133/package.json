@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "csv-parser": "^3.1.0"
+  },
+  "name": "lab1_ex",
+  "version": "1.0.0",
+  "main": "delete_files.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
